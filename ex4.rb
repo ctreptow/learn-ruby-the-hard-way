@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby
 
 cars                        = 100
+# no difference in this case, if we use floating point or not
 space_in_car                = 4.0
 drivers                     = 30
 passengers                  = 90
