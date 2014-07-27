@@ -2,7 +2,16 @@
 
 puts "I will now count my chickens:"
 
+# What is the precedence?  Is / higher than +?
+puts "Hens ( '+' higher ) #{(25 + 30) / 6}"
+puts "Hens ( '/' higher ) #{25 + (30 / 6)}"
+# Since the answer is 30, / has higher precedence
 puts "Hens #{25 + 30 / 6}"
+
+puts "Roosters ( '-' highest ) #{(100 - 25) * 3 % 4}"
+puts "Roosters ( '*' highest ) #{100 - (25 * 3) % 4}"
+puts "Roosters ( '%' highest ) #{100 - 25 * (3 % 4)}"
+# * has the highest precedence
 puts "Roosters #{100 - 25 * 3 % 4}"
 
 puts "Now I will count the eggs:"
